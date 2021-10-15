@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">RailwayTicket</string>
+
+
+    <string name="train_type" />
+    <string name="train_class" />
+    <string name="train_name" />
+    <string name="from" />
+    <string name="to" />
+
+
+    <string-array name="train_type">
+        <item>General</item>
+        <item>Tatkal</item>
+        <item>Premium Tatkal</item>
+    </string-array>
+
+    <string-array name="train_name">
+        <item>Annandhapuri Express</item>
+        <item>KK Express</item>
+        <item>Chennai Express</item>
+        <item>Podhigai</item>
+        <item>Mumbai Express</item>
+        <item>kaveri Express</item>
+    </string-array>
+
+    <string-array name="from">
+        <item>Kanyakumari</item>
+        <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>Madurai</item>
+        <item>Rajapalayam</item>
+    </string-array>
+
+    <string-array name="to">
+        <item>Kanyakumari</item>
+        <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>Madurai</item>
+        <item>Rajapalayam</item>
+    </string-array>
+
+    <string-array name="train_class">
+        <item>Sleeper</item>
+        <item>3AC</item>
+        <item>2AC</item>
+        <item>2S</item>
+    </string-array>
+</resources>

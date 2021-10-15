@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1B00BCD4"
+    tools:context=".BookTicket">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="BOOK YOUR TICKET"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Reservation Type:" />
+            <TextView
+                android:id="@+id/trainName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="152dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Train Name:" />
+
+
+
+            <Spinner
+                android:id="@+id/tfrom"
+                android:layout_width="233dp"
+                android:layout_height="58dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="222dp"
+                android:prompt="@string/from"/>
+
+            <Spinner
+                android:id="@+id/tname"
+                android:layout_width="233dp"
+                android:layout_height="58dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="140dp"
+                android:prompt="@string/train_name"/>
+
+            <Spinner
+                android:id="@+id/tto"
+                android:layout_width="233dp"
+                android:layout_height="58dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="304dp"
+                android:prompt="@string/to"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="234dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Journey From:" />
+
+            <Spinner
+                android:id="@+id/type_spinner"
+                android:layout_width="233dp"
+                android:layout_height="58dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="74dp"
+                android:prompt="@string/train_type" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="316dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Journey To:" />
+            <TextView
+                android:id="@+id/seatClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="398dp"
+                android:textSize="20sp"
+                android:text="Class:" />
+            <Spinner
+                android:id="@+id/class_spinner"
+                android:layout_width="233dp"
+                android:layout_height="58dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="390dp"
+                android:prompt="@string/train_class" />
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="470dp"
+                android:textSize="20sp"
+                android:text="Journey Date:" />
+
+            <Button
+                android:id="@+id/datePickerButton"
+                style="?android:spinnerStyle"
+                android:layout_width="233dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="466dp"
+                android:textColor="@color/black"
+                android:onClick="openDatePicker"
+                android:text="JAN 01 2020"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="540dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Mobile number:           " />
+            <EditText
+                android:id="@+id/number_to_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="540dp"
+                android:layout_toRightOf="@+id/phone"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="15555215556" />
+            <Button
+                android:id="@+id/booktivket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="600dp"
+                android:layout_centerHorizontal="true"
+                android:text="Book"
+                android:onClick="smsSendMessage"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B00BCD4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="BOOK YOUR TICKET"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Passenger_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Passenger Details"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/Passenger_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="Passenger Name:     "
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/pname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/Passenger_name"
+        android:layout_toEndOf="@id/Passenger_name"
+        android:text="      enter your name"/>
+    <TextView
+        android:id="@+id/Passenger_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Passenger Age    :   "
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <SeekBar
+        android:id="@+id/page"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/pname"
+        android:layout_toEndOf="@id/Passenger_age"
+        android:layout_toRightOf="@id/Passenger_age"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/Passenger_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:text="Passenger Sex     :   "
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page"
+        android:layout_toRightOf="@+id/Passenger_sex"
+        android:text="male" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton"
+        android:layout_toRightOf="@id/Passenger_sex"
+        android:text="female" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="300dp"
+        android:text="Next"/>
+
+
+</RelativeLayout>
